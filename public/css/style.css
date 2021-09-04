@@ -1,0 +1,92 @@
+body{
+  font-family: 'Barlow', sans-serif;
+  text-align: center;
+}
+
+/* cover */
+.cover {
+  background-image: url("/images/cover.jpg");
+  height: 100vh;
+}
+
+.heading-text {
+  padding-top: 13rem;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+
+.heading-text h1{
+  font-size: 150px;
+  font-family: 'Barlow', sans-serif;
+  color: white;
+}
+/* navbar */
+.nav-item{
+  font-size: 22px;
+  font-family: 'Barlow', sans-serif;
+
+}
+
+.main_nav{
+  padding:0.75rem 4rem;
+
+  background-color: rgba(0,0,0,0.4);
+
+
+}
+
+.navbar-brand{
+  font-size: 30px;
+
+  font-family: 'Barlow', sans-serif;
+}
+
+/* footer */
+footer {
+  background-color: white;
+
+  text-align: center;
+}
+
+.footercon img {
+  height: 40px;
+  width: 40px;
+  margin: 5%;
+}
+
+.footercon {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+/* why_fitness */
+.Fitness_info h1{
+padding: 5% 0;
+font-size: 80px;
+font-weight: bold;
+
+}
+
+.info_text p{
+padding: 10% 10%;
+font-size: 25px;
+}
+
+.info_text{
+  text-align:center;
+  padding: 1% 1%;
+  margin-left: 1%;
+}
+
+.info_image img{
+width: 100%;
+border: solid black;
+
+
+}
+
+.info_image{
+  padding: 3% 5%;
+}
