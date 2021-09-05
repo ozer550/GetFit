@@ -1,6 +1,7 @@
-body{
+body {
   font-family: 'Barlow', sans-serif;
   text-align: center;
+  overflow-x: hidden;
 }
 
 /* cover */
@@ -16,36 +17,31 @@ body{
   font-weight: bolder;
 }
 
-.heading-text h1{
+.heading-text h1 {
   font-size: 150px;
   font-family: 'Barlow', sans-serif;
   color: white;
 }
+
 /* navbar */
-.nav-item{
+.nav-item {
   font-size: 22px;
   font-family: 'Barlow', sans-serif;
-
 }
 
-.main_nav{
-  padding:0.75rem 4rem;
-
-  background-color: rgba(0,0,0,0.4);
-
-
+.main_nav {
+  padding: 0.75rem 4rem;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-.navbar-brand{
+.navbar-brand {
   font-size: 30px;
-
   font-family: 'Barlow', sans-serif;
 }
 
 /* footer */
 footer {
   background-color: white;
-
   text-align: center;
 }
 
@@ -62,31 +58,220 @@ footer {
 }
 
 /* why_fitness */
-.Fitness_info h1{
-padding: 5% 0;
-font-size: 80px;
-font-weight: bold;
-
+.Fitness_info h1 {
+  padding: 5% 0;
+  font-size: 80px;
+  font-weight: bold;
 }
 
-.info_text p{
-padding: 10% 10%;
-font-size: 25px;
+.info_text_1 p {
+  padding: 10% 10%;
+  font-size: 25px;
 }
 
-.info_text{
-  text-align:center;
+.info_text_2 p {
+  padding: 10% 0;
+  font-size: 25px;
+}
+
+.info_text_1 {
+  text-align: right;
   padding: 1% 1%;
   margin-left: 1%;
 }
 
-.info_image img{
-width: 100%;
-border: solid black;
+.info_text_2 {
+  text-align: left;
+  padding: 1% 1%;
+  margin-left: 1%;
+}
 
+.info_image_1 img {
+  width: 80%;
+  border: solid black;
+  margin-right: 20%;
+}
+
+.info_image_2 img {
+  width: 80%;
+  border: solid black;
+  margin-top: 5%;
+}
+
+/* why_fitness */
+.about_app h1 {
+  padding: 2% 0;
+  font-size: 50px;
+}
+
+.info_app p {
+  line-height: 60px;
+  font-size: 40px;
+  color: white;
+  padding: 4% 4%;
+}
+
+.info_app {
+  text-align: justify;
+  background-color: #1A4B4E;
+  min-height: 80vh;
+  margin: 1% 1%;
+}
+
+.info_app_image_2 {
+  background-image: url("/images/main_bmi.jpg");
+  min-height: 80vh;
+  margin: 1% 1%;
+}
+
+.info_app_image_1 {
+  min-height: 80vh;
+  margin: 1%;
+}
+
+.info_app_image_1 img {
+  max-height: 80vh;
+  width: 100%;
+}
+
+/* bmi */
+.bmi_cover {
+  background-image: url("/images/bmi.jpg");
+  height: 100vh;
+}
+
+.form-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 100px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+  position: absolute;
+  top: 250px;
+  bottom: 0;
+  left: 200px;
+  right: 0;
+  width: 500px;
+  height: 600px;
+}
+
+.form-box:before {
+
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
 
 }
 
-.info_image{
-  padding: 3% 5%;
+.form-box .header-text {
+  font-size: 32px;
+  font-weight: 600;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.form-box input {
+  margin: 10px 0px;
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 18px;
+  font-family: poppins;
+}
+
+.form-box input[type=checkbox] {
+  display: none;
+}
+
+.form-box label {
+  position: relative;
+  margin-left: 5px;
+  margin-right: 10px;
+  top: 5px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.form-box label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: #ddd;
+}
+
+.form-box input[type=checkbox]:checked+label:before {
+  content: "\2713";
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  line-height: 20px;
+}
+
+.form-box span {
+  font-size: 14px;
+}
+
+.form-box button {
+  background-color: deepskyblue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  padding: 20px;
+  margin: 20px 0px;
+}
+
+span a {
+  color: #BBB;
+}
+
+/* healthy */
+.healthy_cover{
+  height: 100vh;
+  background-color:#99cc99;
+}
+
+.sub_cover{
+  width: 100%;
+}
+
+.sub_cover .col-lg-6 img{
+
+margin-top: 10%;
+margin-right: 30%;
+width: 60%;
+}
+
+.sub_cover .col-lg-6 p{
+
+  position: absolute;
+  top:30%;
+  left:20%;
+  font-size: 50px;
+}
+
+.sub_cover .col-lg-6 h1{
+
+  position: absolute;
+  top:45%;
+  left:3%;
+  font-size: 140px;
+
 }

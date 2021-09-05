@@ -1,18 +1,17 @@
-<footer>
+<%- include('partials/header');-%>
+<div class="bmi_cover">
+  <%- include('partials/navbar');-%>
 
-  <div class="container-fluid footercon">
-
-    <a href="mailto:prathameshd419@gmail.com"> <img src="https://image.flaticon.com/icons/png/512/95/95627.png" alt=""></a>
-    <a href="https://twitter.com/ozer550"> <img src="https://image.flaticon.com/icons/png/512/733/733635.png" alt=""></a>
-    <a href="https://www.instagram.com/ozey550/"><img src="https://image.flaticon.com/icons/png/512/1384/1384015.png" alt=""></a>
-
-
+  <div class="form-box">
+    <div class="header-text">
+      BMI Index
+    <form action="/bmi" method="post">
+    </div><input placeholder="Your height (in meter)" type="number" step="any" name="height"> <input placeholder="Your weight (Kg)" type="number" name="weight">
+    <button type="submit">Calculate bmi</button>
+    </form>
   </div>
 
-  <p>Copyright ©2021 Crois En toi. All rights reserved</p>
-
-</footer>
-
+</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
