@@ -7,7 +7,9 @@ const port = 3000;
 
 
 app.use(express.static('public'));
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
@@ -19,7 +21,7 @@ app.get('/bmi', (req, res) => {
 });
 
 app.get('/underweight', (req, res) => {
-  res.render('bmi');
+  res.render('bmiCategories/underweight');
 });
 
 app.get('/healthy', (req, res) => {
@@ -27,18 +29,38 @@ app.get('/healthy', (req, res) => {
 });
 
 app.get('/overweight', (req, res) => {
-  res.render('bmi');
+  res.render('bmiCategories/overweight');
 });
 
-
+app.get('/mental-health', (req, res) => {
+  res.render('mentalHlth');
+});
 
 app.post('/bmi', (req, res) => {
   const height = req.body.height;
   const weight = req.body.weight;
 
-  const bmi = weight/(height*height);
+  var bmi = weight / (height * height);
+
 
   console.log(bmi);
+  if (bmi < 18.5) {
+    bmi = Math.round(bmi * 10) / 10;
+    res.render("bmiCategories/underweight", {
+      bmi: bmi
+    });
+  } else if (bmi >= 25) {
+    bmi = Math.round(bmi * 10) / 10;
+    res.render("bmiCategories/overweight", {
+      bmi: bmi
+    });
+  } else {
+    bmi = Math.round(bmi * 10) / 10;
+    res.render("bmiCategories/healthy", {
+      bmi: bmi
+    });
+  }
+
 
 });
 

@@ -1,0 +1,68 @@
+<%- include('../partials/header');-%>
+<div class="overweight_cover">
+  <%- include('../partials/navbar');-%>
+  <div class="row sub_cover">
+    <div class="col-lg-6">
+      <img src="/images/obese.gif" alt="obese.gif" id="obese">
+    </div>
+    <div class="col-lg-6 bmi_info">
+      <p id="ovr_pr">Your BMI value is<br>
+        <%= bmi %>
+      </p>
+      <h1 id="ovr_heading">Oops!!! <br> You are Overweight</h1>
+    </div>
+  </div>
+</div>
+
+<div class="row advices container-fluid">
+  <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+    <h1>Activites you must incorporate in you daily life</h1>
+    <div class="main_cont">
+      <ul>
+        <li>Make exercise daily part of your day </li>
+        <li>Often park away from your destination</li>
+        <li>Often go for a walk and try to avoid escalator/elevator</li>
+        <li>Start slow, do something you enjoy and slowly increase activity as you grow.</li>
+        <li> Stay hydrated,find someone as a company and change your exercise routine time to time.</li>
+        <li>Celebrate your success, no matter how small it is and keep working.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-lg-6 advices_image_healthy" data-aos="fade-left" data-aos-duration="2000">
+    <img src="images/hathi.jpg">
+  </div>
+</div>
+
+<div class="row advices container-fluid">
+  <div class="col-lg-6 advices_image_healthy" data-aos="fade-right" data-aos-duration="2000">
+    <img id="vege" src="images/vege.jpg">
+  </div>
+  <div class="col-lg-6" data-aos="fade-left" data-aos-duration="2000">
+    <h1>Here are some tips for your diet</h1>
+    <div class="main_cont">
+      <ul>
+        <li>the calorie content of your food should be low</li>
+        <li>vegies are full of nutrition and low in calories </li>
+        <li>Avoid high sugar food and even soda drinks</li>
+        <li>replace starchy version of food with whole grain one</li>
+        <li>increase your fiber intake</li>
+        <li>taking lean meat can help you loose weight as it has low calorie and high protein</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="/js/main.js">
+</script>
+</body>
+
+</html>
